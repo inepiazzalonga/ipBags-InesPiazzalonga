@@ -15,7 +15,7 @@ function ItemCount({ stock, initial, onAdd }) {
   function contadorMenos() {
     if (count > initial) {
       setCount(count - 1);
-    }else{
+    }else if (count<0){
       alert("El carrito está vacío")
     }
   }
