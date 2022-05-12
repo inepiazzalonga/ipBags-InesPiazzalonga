@@ -2,7 +2,6 @@
 
 .item {
     width: 20%;
-    /* padding: 1em; */
     display: flex;
     flex-direction: column;
     align-items:  center;
@@ -30,3 +29,11 @@
 
 }
 
+.masInfo{
+    padding: 0.5em;
+    border-style: none;
+    background-color: transparent;
+    font-family:  'Manrope', sans-serif;
+    font-size: 18px;
+    border-bottom: 1px gray solid;
+}

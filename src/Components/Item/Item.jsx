@@ -10,6 +10,7 @@ export default function Item({categoria, name, price, img}) {
    
     <div className="item">
       <img className="item_img" src={img} alt="" />
+      <button className='masInfo'>Más info</button>
       <div className='item_info'>
           <h3 className="item_title">{name}</h3>
           <p className='item_price'>{`Precio: ${price}`}</p>
