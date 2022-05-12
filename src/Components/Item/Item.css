@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:wght@500&display=swap');
 
 .item {
-    width: 100%;
+    width: 20%;
     /* padding: 1em; */
     display: flex;
     flex-direction: column;
