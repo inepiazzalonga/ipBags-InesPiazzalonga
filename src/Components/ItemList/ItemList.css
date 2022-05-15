@@ -3,8 +3,9 @@
 .product-list-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    gap: 0.5em;
+    justify-content: flex-start;
+    padding: 3em;
+    gap: 4em;
     row-gap: 1.5em;
     flex-wrap: wrap;
     width: 100%;

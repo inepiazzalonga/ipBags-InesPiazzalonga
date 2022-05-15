@@ -1,0 +1,25 @@
+.itemDetail{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    padding: 3em;
+    
+}
+
+.detailImg{
+    width: 50%;
+    padding: 5em;
+    background-color: aqua;
+}
+
+.detailInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 3em;
+}
+
+.detailInfo p{
+    text-align: justify;
+}

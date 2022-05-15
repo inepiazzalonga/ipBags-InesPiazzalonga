@@ -1,28 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList"
-import productsList from "../../Data/csvjson.json"
+// import productsList from "../../Data/productos"
 import Item from "../Item/Item"
 import Loader from "../../Assets/loader.gif"
+import { getFetch } from '../../Data/productos';
 
 
 
 export default function ItemListContainer({greeting = "Shop"}) { 
     const [products, setProducts] = useState([]);
-    const [loader, setLoader] = useState(true);
+    // const [loader, setLoader] = useState(true);
     
-    const getData = new Promise ((res)=>{
-      setTimeout(()=>{
-        loader
-        res(productsList)
-      }, 3000)
-    })
+    // const getData = new Promise ((res)=>{
+    //   setTimeout(()=>{
+    //     loader
+    //     res(productsList)
+    //   }, 2000)
+    // })
   
     useEffect(()=>{
-      getData
+      getFetch()
       .then(res => setProducts(res))
       .catch((err)=> console.log(err))
-      .finally(()=>setLoader(false))
+      // .finally(()=>setLoader(false))
     }, [])
 
     return (
