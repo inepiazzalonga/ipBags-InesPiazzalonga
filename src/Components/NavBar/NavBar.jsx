@@ -11,14 +11,17 @@ export const NavBAr = () => {
         <img src={logo} className="logoNav"/>
       </Link>
             
-        <nav className='navBar'>
-           
-            <ul>
-                <li>Carteras</li>
-                <li>Riñoneras</li>
+        <nav className='navBar'>           
+            <ul>          
+                <li>Carteras</li>         
+            
+                <li>Riñoneras</li>              
+        
                 <li>Shopper</li>
-                <li>Mochilas</li>
-                <li>Bandoleras</li>
+          
+                <li>Mochilas</li>              
+              
+                <li>Bandoleras</li>        
             </ul>
             <CartWidget/>
         </nav>

@@ -8,8 +8,8 @@ export default function Item({categoria, name, price, img, id}) {
         alert(`${count} items agregados al carrito`)
 }
   return (
-    <Link to={`/detail/${id}`}>
-      <div className="item">
+    <Link to={`/detail/${id}`} className="item">
+      <div>
         <img className="item_img" src={img} alt="" />
         <button className='masInfo' >Más info</button>
         <div className='item_info'>

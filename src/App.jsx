@@ -1,5 +1,4 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-
 import './App.css'
 import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetailContainer'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
@@ -18,8 +17,7 @@ function App() {
         <Route path='/cart'/>        
       </Routes>
     </BrowserRouter>
-    {/* <ItemDetailContainer/> */}
-   
+
     </>
   
   )
