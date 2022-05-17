@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList"
 import { products }from "../../Data/productos"
-import Loader from "../../Assets/loader.gif"
+import { useParams } from 'react-router-dom';
+import { Loader } from '../Loader/Loader';
 // import { getFetch } from '../../Data/productos';
 
 
@@ -10,6 +11,7 @@ import Loader from "../../Assets/loader.gif"
 export default function ItemListContainer({greeting = "Shop"}) { 
     const [productsList, setProducts] = useState([]);
     const [loader, setLoader] = useState(true);
+    const {id} = useParams()
     
     const getData = new Promise ((res)=>{
       setTimeout(()=>{
@@ -30,12 +32,8 @@ export default function ItemListContainer({greeting = "Shop"}) {
 
         <>
         <h1 className="itemListContainer__title">{greeting}</h1>
-        <div className="itemListContainer">
-           
-        {loader ? (<div className='loaderInicio'>
-        <img src={Loader} className="loader"/>
-        <p className='loading'>Cargando productos...</p> 
-      </div>):<ItemList products={products}/>}         
+        <div className="itemListContainer">           
+          {loader ? <Loader/> : <ItemList products={products} id={id}/>}         
         </div>
         </>
             
