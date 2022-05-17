@@ -205,11 +205,11 @@ export const products =[
   }
 ]
 
-export const getFetch = (id) => {
+export const getData = (id) => {
   return new Promise((resolve)=>{
       setTimeout(()=>{
-              const query = id ? products.find(product => product.id === id ) : products                                  
-              resolve( query )                           
+              const idProd = id ? products.find(product => product.id === id ) : products                                  
+              resolve( idProd )                           
           }, 2000)
       })            
   

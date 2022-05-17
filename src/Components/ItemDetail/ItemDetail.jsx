@@ -3,7 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
 
 
-export const ItemDetail = (product) => {
+export const ItemDetail = ({product}) => {
     function cart(count){
         alert(`${count} items agregados al carrito`)
 }
