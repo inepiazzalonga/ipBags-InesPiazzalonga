@@ -7,17 +7,18 @@ import Loader from "../../Assets/loader.gif"
 
 export const ItemDetailContainer = () => {
   const [loader, setLoader] = useState(true);
-  const [products, setProducts] = useState([]);
+  const [product, setProduct] = useState({});
   const { id } = useParams()
 
   useEffect(() => {
       getData(id)  // fetch llamada a una api  
-      .then(respuesta=> setProducts(respuesta))
+      .then(respuesta=> setProduct(respuesta))
       .catch((err)=> console.log(err))
       .finally(()=>setLoader(false))     
   }, [])
 
-console.log(products)
+console.log(product)
+console.log(id)
 
   return (
       <>
@@ -26,7 +27,7 @@ console.log(products)
                   <img src={Loader} className="loader"/>
                   <p className='loading'>Please wait 💓</p> 
                   </div>) : 
-                  <ItemDetail  product={products}/>
+                  <ItemDetail  product={product}/>
         }
       
 
