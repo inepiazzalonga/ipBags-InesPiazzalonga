@@ -11,9 +11,8 @@ export const ItemDetailContainer = () => {
   const { id } = useParams()
 
   useEffect(() => {
-    fetch(getData)
-      .then(res => res.json()) 
-      .then(res=> setProducts(res))
+      getData(id)  // fetch llamada a una api  
+      .then(respuesta=> setProducts(respuesta))
       .catch((err)=> console.log(err))
       .finally(()=>setLoader(false))     
   }, [])
