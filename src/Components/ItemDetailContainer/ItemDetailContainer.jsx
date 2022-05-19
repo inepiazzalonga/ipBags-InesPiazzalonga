@@ -18,9 +18,6 @@ export const ItemDetailContainer = () => {
       .finally(()=>setLoader(false))     
   }, [])
 
-console.log(product)
-console.log(id)
-
   return (
       <>
       <div>

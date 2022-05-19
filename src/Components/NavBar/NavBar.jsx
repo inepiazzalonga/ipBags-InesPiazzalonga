@@ -13,24 +13,24 @@ export const NavBAr = () => {
             
         <nav className='navBar'>           
             <ul>          
-              <Link to={"/category/Carteras"} className="link">
+              <Link to={`/category/carteras`} className="link">
                 <li>Carteras</li>         
               </Link>
-             <Link to={"/category/riñoneras"} className="link">
+             <Link to={`/category/riñoneras`} className="link">
                  <li>Riñoneras</li>              
              </Link>
-             <Link to={"/category/shopper"} className="link">
+             <Link to={`/category/shopper`} className="link">
                  <li>Shopper</li>
              </Link>
-             <Link to={"/category/mochilas"} className="link">
+             <Link to={`/category/mochilas`} className="link">
                  <li>Mochilas</li>              
              </Link>
-             <Link to={"/category/bandoleras"} className="link">
+             <Link to={`/category/bandoleras`} className="link">
                 <li>Bandoleras</li>        
              </Link>  
             </ul>
             <Link to={"/cart"}>
-            <CartWidget/>
+              <CartWidget/>
             </Link>
         </nav>
     </header>
