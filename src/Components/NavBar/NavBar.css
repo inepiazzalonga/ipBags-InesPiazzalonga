@@ -34,3 +34,7 @@ header{
 .navBar ul li:hover{
     border-bottom: 1px #8C9CA2 solid;
 }
+
+.link{
+    text-decoration: none;
+}

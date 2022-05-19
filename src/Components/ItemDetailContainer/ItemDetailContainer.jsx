@@ -1,9 +1,10 @@
 
 import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import { ItemDetail }  from '../ItemDetail/ItemDetail';
-import { getData } from '../../Data/productos';
+import {ItemDetail}  from '../ItemDetail/ItemDetail';
+import {getData} from '../../Data/productos';
 import { Loader } from '../Loader/Loader';
+
 
 export const ItemDetailContainer = () => {
   const [loader, setLoader] = useState(true);
@@ -17,13 +18,10 @@ export const ItemDetailContainer = () => {
       .finally(()=>setLoader(false))     
   }, [])
 
-console.log(product)
-console.log(id)
-
   return (
       <>
       <div>
-        {loader ? <Loader/> : <ItemDetail  product={product}/> }
+        {loader ? <Loader greeting={"Please wait 💓"}/> : <ItemDetail  product={product}/> }
       
 
       </div>

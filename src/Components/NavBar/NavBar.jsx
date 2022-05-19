@@ -13,17 +13,25 @@ export const NavBAr = () => {
             
         <nav className='navBar'>           
             <ul>          
+              <Link to={`/category/carteras`} className="link">
                 <li>Carteras</li>         
-            
-                <li>Riñoneras</li>              
-        
-                <li>Shopper</li>
-          
-                <li>Mochilas</li>              
-              
+              </Link>
+             <Link to={`/category/riñoneras`} className="link">
+                 <li>Riñoneras</li>              
+             </Link>
+             <Link to={`/category/shopper`} className="link">
+                 <li>Shopper</li>
+             </Link>
+             <Link to={`/category/mochilas`} className="link">
+                 <li>Mochilas</li>              
+             </Link>
+             <Link to={`/category/bandoleras`} className="link">
                 <li>Bandoleras</li>        
+             </Link>  
             </ul>
-            <CartWidget/>
+            <Link to={"/cart"}>
+              <CartWidget/>
+            </Link>
         </nav>
     </header>
   )

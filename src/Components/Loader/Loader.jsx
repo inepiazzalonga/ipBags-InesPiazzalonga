@@ -1,12 +1,11 @@
 import React from 'react'
-import loader from "../../Assets/loader.gif"
+import loader from "../../assets/loader.gif"
 
-
-export const Loader = () => {
+export const Loader = ({greeting}) => {
   return (
     <div className='loaderInicio'>
         <img src={loader} className="loader"/>
-        <p className='loading'>Cargando productos...</p> 
-    </div>
+        <p className='loading'>{greeting}</p> 
+      </div>
   )
 }
