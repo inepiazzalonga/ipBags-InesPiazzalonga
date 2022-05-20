@@ -4,7 +4,7 @@ import ItemList from "../ItemList/ItemList"
 import { products }from "../../Data/productos"
 import { Loader } from '../Loader/Loader';
 import { useParams } from 'react-router-dom';
-// import { getData } from '../../Data/productos';
+import { getData } from '../../Data/productos';
 
 
 
@@ -15,14 +15,6 @@ export default function ItemListContainer({greeting = "Shop"}) {
     const {category} = useParams()
 
 
-    const getData = new Promise ((res)=>{
-      setTimeout(()=>{
-        loader
-        res(productsList)
-      }, 2000)
-    })
-  
-  
     // useEffect(()=>{
     //   getData
     //   .then(res => setProducts(res))
@@ -32,16 +24,18 @@ export default function ItemListContainer({greeting = "Shop"}) {
 
     useEffect(() => {
       if (category) {
-        getData
-          .then((respuesta) => 
-            setProducts(respuesta.filter((item) => item.category === category)))          
-          .catch((err) => console.log(err))
-          .finally(() => setLoader(false));
+        getData()
+        .then((res) => {
+          setProducts(res.filter((item) => item.category === category))        
+          console.log(res)
+          })
+        .catch((err) => console.log(err))
+        .finally(() => setLoader(false));
       } else {
-        getData
-          .then((respuesta) => setProducts(respuesta))
-          .catch((err) => console.log(err))
-          .finally(() => setLoader(false));
+        getData()
+        .then((res) => setProducts(res))
+        .catch((err) => console.log(err))
+        .finally(() => setLoader(false));
       }
     }, [category]);
   
@@ -52,7 +46,7 @@ export default function ItemListContainer({greeting = "Shop"}) {
         <h1 className="itemListContainer__title">{greeting}</h1>
         <div className="itemListContainer">
 
-          {loader ? <Loader greeting={"Cargando productos..."}/> : <ItemList products={products}/>}         
+          {loader ? <Loader greeting={"Cargando productos..."}/> : <ItemList products={productsList}/>}         
 
         </div>
       </>

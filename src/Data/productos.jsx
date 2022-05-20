@@ -1,7 +1,7 @@
 export const products =[
   {
     id: "1",
-    category: "Carteras",
+    category: "carteras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Cartera Lily",
     price: "$ 6.500",
@@ -10,7 +10,7 @@ export const products =[
   },
   {
     id: "2",
-    category: "Carteras",
+    category: "carteras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Cartera Spencer",
     price: "$ 5.400",
@@ -19,7 +19,7 @@ export const products =[
   },
   {
     id: "3",
-    category: "Carteras",
+    category: "carteras",
     description: "Cartera de material textil de poliéster. Doble asa corta y asa larga regulable. Cierre de cremallera. Bolsillo interno. Forrería interior.",
     name: "Cartera City",
     price: "$ 6.500",
@@ -28,7 +28,7 @@ export const products =[
   },
   {
     id: "4",
-    category: "Carteras",
+    category: "carteras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Cartera Carrie",
     description: "Bowling con bolsillo frontal. Doble asa corta y asa larga regulable. Cierre de cremallera. Bolsillo interno. Forrería interior.",
@@ -38,7 +38,7 @@ export const products =[
   },
   {
     id: "5",
-    category: "Carteras",
+    category: "carteras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Cartera Chain",
     price: "$ 5.800",
@@ -47,7 +47,7 @@ export const products =[
   },
   {
     id: "6",
-    category: "Mochilas",
+    category: "mochilas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Mochila Amber",
     price: "$ 6.700",
@@ -56,7 +56,7 @@ export const products =[
   },
   {
     id: "7",
-    category: "Mochilas",
+    category: "mochilas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Mochila Crocco",
     price: "$ 6.300",
@@ -65,7 +65,7 @@ export const products =[
   },
   {
     id: "8",
-    category: "Mochilas",
+    category: "mochilas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Mochila Aria",
     price: "$ 6.700",
@@ -74,7 +74,7 @@ export const products =[
   },
   {
     id: "9",
-    category: "Mochilas",
+    category: "mochilas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Mochila Voyage",
     price: "$ 6.700",
@@ -83,7 +83,7 @@ export const products =[
   },
   {
     id: "10",
-    category: "Mochilas",
+    category: "mochilas",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Mochila Jules",
     price: "$ 6.300",
@@ -92,7 +92,7 @@ export const products =[
   },
   {
     id: "11",
-    category: "Shopper",
+    category: "shopper",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Shopper Market",
     price: "$ 6.700",
@@ -101,7 +101,7 @@ export const products =[
   },
   {
     id: "12",
-    category: "Shopper",
+    category: "shopper",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Shopper Julia",
     price: "$ 7.100",
@@ -110,7 +110,7 @@ export const products =[
   },
   {
     id: "13",
-    category: "Shopper",
+    category: "shopper",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Shopper Patch",
     price: "$ 6.800",
@@ -119,7 +119,7 @@ export const products =[
   },
   {
     id: "14",
-    category: "Shopper",
+    category: "shopper",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Shopper Stripe",
     price: "$ 6.800",
@@ -128,7 +128,7 @@ export const products =[
   },
   {
     id: "15",
-    category: "Shopper",
+    category: "shopper",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Shopper Version",
     price: "$ 6.500",
@@ -137,7 +137,7 @@ export const products =[
   },
   {
     id: "16",
-    category: "Riñonera",
+    category: "riñoneras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Riñonera Fancy",
     price: "$ 5.300",
@@ -146,7 +146,7 @@ export const products =[
   },
   {
     id:"17",
-    category: "Riñonera",
+    category: "riñoneras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Riñonera Voyage",
     price: "$ 5.600",
@@ -155,7 +155,7 @@ export const products =[
   },
   {
     id: "18",
-    category: "Riñonera",
+    category: "riñoneras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Riñonera Pack n Go",
     price: "$ 4.500",
@@ -164,7 +164,7 @@ export const products =[
   },
   {
     id: "19",
-    category: "Riñonera",
+    category: "riñoneras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Riñonera Pouch",
     price: "$ 5.000",
@@ -173,7 +173,7 @@ export const products =[
   },
   {
     id: "20",
-    category: "Riñonera",
+    category: "riñoneras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Riñonera Weekend",
     price: "$ 4.800",
@@ -182,7 +182,7 @@ export const products =[
   },
   {
     id: "21",
-    category: "Bandolera",
+    category: "bandoleras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Bandolera Gigi",
     description:"Bandolera matelaseada con solapa triangular y asa de cadena. Asa larga o al hombro regulable. Cierre de broche imán. Bolsillo interno. Forrería interior.",
@@ -192,7 +192,7 @@ export const products =[
   },
   {
     id: "22",
-    category: "Bandolera",
+    category: "bandoleras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Bandolera Snake",
     price: "$ 4.700",
@@ -201,7 +201,7 @@ export const products =[
   },
   {
     id: "23",
-    category: "Bandolera",
+    category: "bandoleras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Bandolera Kate",
     price: "$ 5.800",
@@ -210,7 +210,7 @@ export const products =[
   },
   {
     id: "24",
-    category: "Bandolera",
+    category: "bandoleras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Bandolera Idol",
     price: "$ 5.800",
@@ -219,7 +219,7 @@ export const products =[
   },
   {
     id: "25",
-    category: "Bandolera",
+    category: "bandoleras",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis consectetur arcu a ultrices. Praesent rutrum lobortis mi at laoreet. Etiam nec sapien at dolor aliquet consequat non in mi. Vivamus mollis placerat lorem, condimentum laoreet felis tristique eu. Proin id urna ligula. Mauris facilisis tellus eros, rutrum maximus erat dictum ut. ",
     name: "Bandolera Rue",
     price: "$ 6.200",
