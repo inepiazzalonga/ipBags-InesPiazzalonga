@@ -11,7 +11,7 @@ export const CartWidget = () => {
     return (
     <>
     <img src={Cart} className="carrito"/>
-    <button>{totalItems}</button>
+    <button className='totalItems'>{totalItems}</button>
     </>
   )
 }
