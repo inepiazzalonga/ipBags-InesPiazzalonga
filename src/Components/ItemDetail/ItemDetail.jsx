@@ -1,21 +1,23 @@
 import React, { useState } from 'react'
 import { BuyButton } from '../BuyButton/BuyButton'
 import ItemCount from '../ItemCount/ItemCount'
-
+import { useCartContext } from "../../context/CartContext"
 import "./ItemDetail.css"
 
 
-export const ItemDetail = ({product, onAdd}) => {
+export const ItemDetail = ({product}) => {
     const [inputType, setInputType] = useState('itemCount');
+    const {addToCart} = useCartContext()
 
     function handleInputType() {
         setInputType('buyButtons');
     }
 
-    function cart(count){
-        alert(`${count} items agregados al carrito`)
-    }
-    // console.log(product)
+    const onAdd = (count) =>{
+        console.log(`Has agregado ${count} producto/s a tu carrito`)
+        addToCart({...product, count})
+      }
+    
   return (
     <div className='itemDetail'>
         <div className='detailImg'>
@@ -28,7 +30,6 @@ export const ItemDetail = ({product, onAdd}) => {
             {inputType === 'itemCount' ?
                     <ItemCount initial={1} stock={5} onAdd={onAdd} handleInputType={handleInputType}/>:
                     <BuyButton/>}
-            {/* <ItemCount initial={1} stock={5} onAdd={(cart)}/> */}
             
         </div>
     </div>

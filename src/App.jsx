@@ -3,7 +3,7 @@ import './App.css'
 import { Cart } from './Components/Cart/Cart'
 import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetailContainer'
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
-
+import CartContextProvider from './context/CartContext';
 import { NavBAr } from './Components/NavBar/NavBar'
 
 function App() {
@@ -11,13 +11,15 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <NavBAr/>
-      <Routes>
-        <Route path="/" element = {<ItemListContainer/> }/>
-        <Route path='/detail/:id' element = { <ItemDetailContainer/> } />
-        <Route path='/category/:category' element={<ItemListContainer/>}/>
-        <Route path='/cart' element={<Cart/>}/>        
-      </Routes>
+      <CartContextProvider>
+        <NavBAr/>
+        <Routes>
+          <Route path="/" element = {<ItemListContainer/> }/>
+          <Route path='/detail/:id' element = { <ItemDetailContainer/> } />
+          <Route path='/category/:category' element={<ItemListContainer/>}/>
+          <Route path='/cart' element={ <Cart/> }/>        
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
 
     </>

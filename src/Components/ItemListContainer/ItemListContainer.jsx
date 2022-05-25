@@ -25,10 +25,8 @@ export default function ItemListContainer({greeting = "Shop"}) {
     useEffect(() => {
       if (category) {
         getData()
-        .then((res) => {
-          setProducts(res.filter((item) => item.category === category))        
-          console.log(res)
-          })
+        .then((res) => 
+          setProducts(res.filter((item) => item.category === category)))
         .catch((err) => console.log(err))
         .finally(() => setLoader(false));
       } else {
