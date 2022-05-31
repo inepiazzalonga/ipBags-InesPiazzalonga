@@ -10,8 +10,12 @@ export const CartWidget = () => {
   const totalItems =  cartList.reduce((acc, item)=> acc = acc + item.count, 0)
     return (
     <>
-    <img src={Cart} className="carrito"/>
-    <button className='totalItems'>{totalItems}</button>
+    {cartList.length ?  <div>
+          <img src={Cart} className="carrito"/>
+          <button className='totalItems'>{totalItems}</button>
+    </div> : <img src={Cart} className="carrito"/>} 
+   
+
     </>
   )
 }

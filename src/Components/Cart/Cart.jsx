@@ -4,11 +4,13 @@ import bag from "../../assets/bag.png"
 import { Link, useParams } from "react-router-dom";
 import React, { useState } from 'react'
 
-export const Cart = () => {
+export const Cart = ({product}) => {
 
   const {cartList, deleteCart, deleteItem} = useCartContext()
 
   const total = cartList.reduce((acc, item)=> acc = acc + (parseFloat(item.price)*item.count),0)
+
+
 
 console.log(total)
   return (
@@ -22,7 +24,10 @@ console.log(total)
             </Link>
             <p>{product.name}</p>
             <p>Precio: ${product.price}</p>
+            {/* <button onClick={restar}>-</button> */}
             <p>Cantidad: {product.count}u</p>
+            {/* <button onClick={sumar}>+</button> */}
+
             <button onClick={()=>deleteItem(product.id)} className="delete-item">X</button>
           </li>)}
           {cartList.length ? <div>`
