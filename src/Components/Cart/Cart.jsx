@@ -5,14 +5,17 @@ import { Link, useParams } from "react-router-dom";
 import React, { useState } from 'react'
 
 export const Cart = ({product}) => {
-
+const {nextTotal, setnewTotal}=useState()
   const {cartList, deleteCart, deleteItem} = useCartContext()
 
   const total = cartList.reduce((acc, item)=> acc = acc + (parseFloat(item.price)*item.count),0)
 
 
 
-console.log(total)
+function ordenDeCompra(){
+
+}
+
   return (
     <div className="cart-container">
       <div className="cart">

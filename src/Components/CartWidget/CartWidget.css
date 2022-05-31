@@ -14,3 +14,15 @@
     color: #fff;
     cursor: pointer;
 }
+
+.carritoVacioWidget{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carritoVacioWidget p{
+    text-align: center;
+    width: 70%;
+    font-size: 13px;
+}

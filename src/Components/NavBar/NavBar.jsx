@@ -3,8 +3,11 @@ import logo from "../../Assets/fav.png"
 import { CartWidget } from '../CartWidget/CartWidget'
 import {Link} from 'react-router-dom'
 import "./NavBar.css"
+import { useCartContext } from '../../context/CartContext'
 
 export const NavBAr = () => {
+  const {cartList}=useCartContext()
+
   return (
     <header>
       <Link to={'/'}>
@@ -29,9 +32,10 @@ export const NavBAr = () => {
                 <li>Bandoleras</li>        
              </Link>  
             </ul>
-            <Link to={"/cart"}>
+            {cartList.length ? <Link to={"/cart"}>
               <CartWidget/>
-            </Link>
+            </Link> : <CartWidget/>}
+            
         </nav>
     </header>
   )

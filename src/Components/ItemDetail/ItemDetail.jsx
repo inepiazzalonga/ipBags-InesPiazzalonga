@@ -26,7 +26,7 @@ export const ItemDetail = ({product}) => {
         <div className='detailInfo'>
             <h3 className="item_title">{`Producto: ${product.name}`}</h3>
             <p>Descripción: {`${product.description}`}</p>
-            <p className='item_price'>{`Precio: ${product.price}`}</p>
+            <p className='item_price'>{`Precio: $ ${product.price}`}</p>
             {inputType === 'itemCount' ?
                     <ItemCount initial={1} stock={5} onAdd={onAdd} handleInputType={handleInputType}/>:
                     <BuyButton/>}
