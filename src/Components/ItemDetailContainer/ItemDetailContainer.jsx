@@ -1,10 +1,10 @@
 
 import { useParams } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
 import {ItemDetail}  from '../ItemDetail/ItemDetail';
-import {getData} from '../../Data/productos';
 import { Loader } from '../Loader/Loader';
 import {getFirestore, doc, getDoc} from "firebase/firestore"
+import { Footer } from '../Footer/Footer';
+import React, { useEffect, useState } from 'react';
 
 
 
@@ -23,20 +23,14 @@ export const ItemDetailContainer = () => {
  }, [])
 
 
-  // useEffect(() => {
-  //     getData(id)  // fetch llamada a una api  
-  //     .then(respuesta=> setProduct(respuesta))
-  //     .catch((err)=> console.log(err))
-  //     .finally(()=>setLoader(false))     
-  // }, [])
 
   return (
       <>
       <div>
-        {loader ? <Loader greeting={"Please wait 💓"}/> : <ItemDetail  product={product}/> }
-      
+        {loader ? <Loader greeting={"Please wait 💓"}/> : <ItemDetail  product={product}/> }  
 
       </div>
+      <Footer/>
       
       </>
     

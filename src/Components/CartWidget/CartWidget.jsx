@@ -1,7 +1,7 @@
-import React from 'react'
-import Cart from "../../assets/carrito.gif"
-import "./CartWidget.css"
 import { useCartContext } from "../../context/CartContext"
+import Cart from "../../assets/carrito.gif"
+import React from 'react'
+import "./CartWidget.css"
 
 
 export const CartWidget = () => {
@@ -11,13 +11,14 @@ export const CartWidget = () => {
     return (
     <>
     {cartList.length ?  <div>
-          <img src={Cart} className="carrito"/>
-          <button className='totalItems'>{totalItems}</button>
-    </div> :  <div>
-                <img src={Cart} className="carrito"/>
-                <button className='totalItems'>{totalItems}</button>
-              </div>} 
-   
+                          <img src={Cart} className="carrito"/>
+                          <button className='totalItems'>{totalItems}</button>
+                        </div> :  
+                        <div>
+                          <img src={Cart} className="carrito"/>
+                          <button className='totalItems'>{totalItems}</button>
+                        </div>} 
+                      
 
     </>
   )

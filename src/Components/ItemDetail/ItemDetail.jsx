@@ -14,7 +14,6 @@ export const ItemDetail = ({product}) => {
     }
 
     const onAdd = (count) =>{
-        console.log(`Has agregado ${count} producto/s a tu carrito`)
         addToCart({...product, count})
       }
     

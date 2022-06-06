@@ -1,9 +1,9 @@
-import React from 'react'
-import logo from "../../Assets/fav.png"
+import { useCartContext } from '../../context/CartContext'
 import { CartWidget } from '../CartWidget/CartWidget'
 import {Link} from 'react-router-dom'
-import "./NavBar.css"
-import { useCartContext } from '../../context/CartContext'
+import logo from "../../Assets/fav.png"
+import React from 'react'
+import "./NavBar.css" 
 
 export const NavBAr = () => {
   const {cartList}=useCartContext()
@@ -16,19 +16,19 @@ export const NavBAr = () => {
             
         <nav className='navBar'>           
             <ul>          
-              <Link to={`/category/carteras`} className="link">
+              <Link to={`/shop/category/carteras`} className="link">
                 <li>Carteras</li>         
               </Link>
-             <Link to={`/category/riñoneras`} className="link">
+             <Link to={`/shop/category/riñoneras`} className="link">
                  <li>Riñoneras</li>              
              </Link>
-             <Link to={`/category/shopper`} className="link">
+             <Link to={`/shop/category/shopper`} className="link">
                  <li>Shopper</li>
              </Link>
-             <Link to={`/category/mochilas`} className="link">
+             <Link to={`/shop/category/mochilas`} className="link">
                  <li>Mochilas</li>              
              </Link>
-             <Link to={`/category/bandoleras`} className="link">
+             <Link to={`/shop/category/bandoleras`} className="link">
                 <li>Bandoleras</li>        
              </Link>  
             </ul>
@@ -37,6 +37,9 @@ export const NavBAr = () => {
             </Link> : <CartWidget/>}
             
         </nav>
+        <Link to="/shop" className='link'>
+        <p className='verTodo'>Ver todo</p>
+        </Link>
     </header>
   )
 }

@@ -11,6 +11,10 @@ const CartContextProvider = ({children}) => {
     function isInCart(id) {
         return cartList.some(el => el.id === id);
     }
+/**
+ * If the item is already in the cart, increase the quantity of the item in the cart. Otherwise, add
+ * the item to the cart.
+ */
     function addToCart(item) {
         if (isInCart(item.id)) {
             let i = cartList.findIndex(el => el.id === item.id);
@@ -23,25 +27,6 @@ const CartContextProvider = ({children}) => {
                 item]);
         }
     }
-
-    // function addToCart(item){
-    //     if(cartList.some(article => article.id === item.id)){
-    //        const newCart = cartList.map(article => {
-    //            if(article.id === item.id) {
-    //                article.count = item.count + article.count;
-    //            }
-    //            return article;
-    //        })
-    //     setCartList(newCart);
-
-    //     }
-    //     else {
-    //         setCartList([
-    //             ...cartList,
-    //             item
-    //         ])
-    //     }
-    // }
 
     const deleteItem = (id) => {
         const newCart = [...cartList];

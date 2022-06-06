@@ -1,30 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import "./ItemListContainer.css"
 import ItemList from "../ItemList/ItemList"
-// import { products }from "../../Data/productos"
 import { Loader } from '../Loader/Loader';
 import { useParams } from 'react-router-dom';
-// import { getData } from '../../Data/productos';
-import {getFirestore, collection, getDocs, where, query} from "firebase/firestore"
+import {getFirestore, collection, getDocs, where, query, addDoc} from "firebase/firestore"
+import { Footer } from '../Footer/Footer';
+import { products } from "../../Data/productos";
+import React, { useEffect, useState } from 'react';
+import "./ItemListContainer.css"           
 
 
 
 export default function ItemListContainer({greeting = "Shop"}) { 
     const [productsList, setProducts] = useState([]);
-    const [product, setProduct] = useState({})
     const [loader, setLoader] = useState(true);
     const {category} = useParams()
-
-    // useEffect(()=>{
-    //   const db = getFirestore()
-    //   const queryCollection = collection(db, "productos")
-    //   const queryCollectionFilter = query(queryCollection, where("category", "==", "shopper"))
-
-    //   getDocs(queryCollectionFilter)
-    //   .then(res=> setProducts(res.docs.map(item=>({id:item.id, ...item.data()}))))
-    //   .catch((err)=> console.log(err))
-    // .finally(()=>setLoader(false)) 
-    // },[])
 
     useEffect(() => {
       const db = getFirestore();
@@ -48,28 +36,7 @@ export default function ItemListContainer({greeting = "Shop"}) {
           .catch((err) => console.error(err))
           .finally(() => setLoader(false));
         }
-    }, [category]);
-
-
-    // useEffect(() => {
-    //   const db = getFirestore()
-    //   const queryCollectionAll = collection(db, "productos")
-    //   const queryCollectionCategory = collection(db, "category")
-    //   const queryCollectionFilter = query(queryCollectionCategory, where("category", "==", true))
-
-    //   if (categoryID) {
-    //     getDocs(queryCollectionFilter)
-    //   .then(res=> setProducts(res.docs.map(item=>({id:item.id, ...item.data()}))))
-    //   .catch((err)=> console.log(err))
-    //   .finally(()=>setLoader(false)) 
-    //   } else {
-    //   getDocs(queryCollectionAll)
-    //   .then(res=> setProducts(res.docs.map(item=>({id:item.id, ...item.data()}))))
-    //   .catch((err)=> console.log(err))
-    //   .finally(()=>setLoader(false)) 
-    //   }
-    // }, [categoryID]);
-  
+    }, [category]);  
 
     return (
 
@@ -80,6 +47,7 @@ export default function ItemListContainer({greeting = "Shop"}) {
           {loader ? <Loader greeting={"Cargando productos..."}/> : <ItemList products={productsList}/>}         
 
         </div>
+        <Footer/>
       </>
             
     );

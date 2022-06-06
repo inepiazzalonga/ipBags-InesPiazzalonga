@@ -2,12 +2,13 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    column-gap: 0ex;
 }
 
 .logoNav{
     width: 5em;
     height: 5em;
+    margin-top: 1.5em;
 }
 
 .navBar{
@@ -37,4 +38,14 @@ header{
 
 .link{
     text-decoration: none;
+}
+
+.verTodo{
+    text-transform: uppercase;
+    color: #8C9CA2;
+    text-decoration: none;
+}
+
+.verTodo:hover{
+    border-bottom: 1px #8C9CA2 solid;
 }

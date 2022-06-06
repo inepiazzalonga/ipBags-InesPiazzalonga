@@ -5,6 +5,7 @@ import { ItemDetailContainer } from './Components/ItemDetailContainer/ItemDetail
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer'
 import CartContextProvider from './context/CartContext';
 import { NavBAr } from './Components/NavBar/NavBar'
+import { Home } from './Components/Home/Home'
 
 function App() {
 
@@ -14,10 +15,18 @@ function App() {
       <CartContextProvider>
         <NavBAr/>
         <Routes>
-          <Route path="/" element = {<ItemListContainer/> }/>
-          <Route path='/detail/:id' element = { <ItemDetailContainer/> } />
-          <Route path='/category/:category' element={<ItemListContainer/>}/>
-          <Route path='/cart' element={ <Cart/> }/>        
+          <Route path='/' element={<Home/>}/>
+          <Route path="/shop" element = {<ItemListContainer/> }/>
+          <Route path='/shop/detail/:id' element = { <ItemDetailContainer/> } />
+          <Route path='/shop/category/:category' element={<ItemListContainer/>}/>
+          <Route path='/shop/cart' element={ <Cart/> }/> 
+          <Route
+            path="/whatsapp"
+            component={() => {
+              window.location.replace('wa.link/zequw7');
+              return null;
+            }}
+          />    
         </Routes>
       </CartContextProvider>
     </BrowserRouter>
