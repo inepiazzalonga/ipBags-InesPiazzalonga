@@ -44,7 +44,7 @@ console.log(cartList)
         order.total = total;
 
         const queryCollectionOrders = collection(db, 'orders')
-         addDoc(queryCollectionOrders, order)
+        addDoc(queryCollectionOrders, order)
             .then(resp => setUserId(resp.id))
             .catch(err => console.log(err))
             // .finally(vaciarCarrito(), setCartStatus(false), setLoading(false))
