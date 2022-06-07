@@ -16,7 +16,7 @@ export default function ItemListContainer({greeting = "Shop"}) {
 
     useEffect(() => {
       const db = getFirestore();
-      const queryCollection = collection(db, "productos");
+      const queryCollection = collection(db, "products");
 
       if(!category){  
       getDocs(queryCollection)

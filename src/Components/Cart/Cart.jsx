@@ -26,8 +26,6 @@ export const Cart = () => {
     })
   }
 
-console.log(cartList)
-
   function newOrder(e){
         e.preventDefault();
         let order = {};
@@ -35,21 +33,25 @@ console.log(cartList)
         order.buyer = buyer;
         order.items = cartList.map(item => {
             const id = item.id;
-            const name = item.nombre;
-            const price = item.precio;
+            const name = item.name;
+            const price = item.price;
             const quantity = item.count;
 
             return { id, name, price, quantity }
-        })
+          })
+          console.log(order)
         order.total = total;
-
+        
         const queryCollectionOrders = collection(db, 'orders')
-        addDoc(queryCollectionOrders, order)
+
+        setTimeout(()=>{
+          addDoc(queryCollectionOrders, order)
             .then(resp => setUserId(resp.id))
             .catch(err => console.log(err))
-            // .finally(vaciarCarrito(), setCartStatus(false), setLoading(false))
-
-            console.log("order" + order.items)
+          // .finally(deleteCart())
+          
+        },2000)
+       
     }
   
 
