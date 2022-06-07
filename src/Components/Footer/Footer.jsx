@@ -10,9 +10,9 @@ export const Footer = () => {
   return (
     <footer>
           <div className="redes">
-           
-              <a href="wa.link/zequw7"><img src={whatsapp}/> </a>
-           
+            <Link to='wa.link/zequw7'>
+              <img src={whatsapp}/> 
+            </Link>
             <Link to='https://www.instagram.com/inepiazzalonga/'>
               <img src={linkedin}/> 
             </Link>
