@@ -27,11 +27,8 @@ export const Footer = () => {
             <a href="https://github.com/inepiazzalonga"><img src="./img/github.png" alt="" class="icon"></a>
             <a href="https://www.linkedin.com/in/ines-piazzalonga-she-her-6b3a52207/"><img src="./img/linkedin.png" alt="" class="icon"></a> */}
             
-        <p>Copyright ©️ Inés Piazzalonga <br /> Proyecto final ReactJs</p>
         </div>
-        <Link to='/login'>
-          <img src={login} alt="" />
-        </Link>
+        <p>Copyright ©️ Inés Piazzalonga <br /> Proyecto final ReactJs</p>
     </footer>
   )
 }
