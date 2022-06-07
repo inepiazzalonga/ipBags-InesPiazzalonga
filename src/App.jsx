@@ -19,14 +19,7 @@ function App() {
           <Route path="/shop" element = {<ItemListContainer/> }/>
           <Route path='/shop/detail/:id' element = { <ItemDetailContainer/> } />
           <Route path='/shop/category/:category' element={<ItemListContainer/>}/>
-          <Route path='/shop/cart' element={ <Cart/> }/> 
-          <Route
-            path="/whatsapp"
-            component={() => {
-              window.location.replace('wa.link/zequw7');
-              return null;
-            }}
-          />    
+          <Route path='/shop/cart' element={ <Cart/> }/>   
         </Routes>
       </CartContextProvider>
     </BrowserRouter>

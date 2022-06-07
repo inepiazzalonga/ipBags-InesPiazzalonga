@@ -10,16 +10,16 @@ export const Footer = () => {
   return (
     <footer>
           <div className="redes">
-            <Link to='/whatsapp'>
-              <img src={whatsapp}/> 
-            </Link>
-            <Link to='/whatsapp'>
+           
+              <a href="wa.link/zequw7"><img src={whatsapp}/> </a>
+           
+            <Link to='https://www.instagram.com/inepiazzalonga/'>
               <img src={linkedin}/> 
             </Link>
-            <Link to='/whatsapp'>
+            <Link to='https://github.com/inepiazzalonga'>
               <img src={github}/> 
             </Link>
-            <Link to='/whatsapp'>
+            <Link to='https://www.linkedin.com/in/ines-piazzalonga-she-her-6b3a52207'>
               <img src={instagram}/> 
             </Link>
             {/* <a href="https://www.instagram.com/inepiazzalonga/"><img src="./img/whatsapp.png" alt="" class="icon"></a>
