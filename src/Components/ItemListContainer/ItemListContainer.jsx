@@ -1,9 +1,8 @@
 import ItemList from "../ItemList/ItemList"
 import { Loader } from '../Loader/Loader';
 import { useParams } from 'react-router-dom';
-import {getFirestore, collection, getDocs, where, query, addDoc} from "firebase/firestore"
+import {getFirestore, collection, getDocs, where, query} from "firebase/firestore"
 import { Footer } from '../Footer/Footer';
-import { products } from "../../Data/productos";
 import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css"           
 
@@ -13,6 +12,7 @@ export default function ItemListContainer({greeting = "Shop"}) {
     const [productsList, setProducts] = useState([]);
     const [loader, setLoader] = useState(true);
     const {category} = useParams()
+
 
     useEffect(() => {
       const db = getFirestore();

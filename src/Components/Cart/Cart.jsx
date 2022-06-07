@@ -40,7 +40,7 @@ export const Cart = () => {
             return { id, name, price, quantity }
           })
           console.log(order)
-        order.total = total;
+          order.total = total;
         
         const queryCollectionOrders = collection(db, 'orders')
 
@@ -48,7 +48,7 @@ export const Cart = () => {
           addDoc(queryCollectionOrders, order)
             .then(resp => setUserId(resp.id))
             .catch(err => console.log(err))
-          // .finally(deleteCart())
+            .finally(deleteCart())
           
         },2000)
        

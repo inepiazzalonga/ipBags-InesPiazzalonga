@@ -28,8 +28,7 @@ export const ItemDetail = ({product}) => {
             <p className='item_price'>{`Precio: $ ${product.price}`}</p>
             {inputType === 'itemCount' ?
                     <ItemCount initial={1} stock={5} onAdd={onAdd} handleInputType={handleInputType}/>:
-                    <BuyButton/>}
-            
+                    <BuyButton/>}            
         </div>
     </div>
   )

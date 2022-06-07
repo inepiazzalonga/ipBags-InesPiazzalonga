@@ -4,6 +4,7 @@ import whatsapp from "../../assets/whatsapp.png"
 import linkedin from "../../assets/linkedin.png"
 import github from "../../assets/github.png"
 import instagram from "../../assets/instagram.png"
+import login from "../../assets/iniciar-sesion.png"
 import "./footer.css"
 
 export const Footer = () => {
@@ -26,8 +27,11 @@ export const Footer = () => {
             <a href="https://github.com/inepiazzalonga"><img src="./img/github.png" alt="" class="icon"></a>
             <a href="https://www.linkedin.com/in/ines-piazzalonga-she-her-6b3a52207/"><img src="./img/linkedin.png" alt="" class="icon"></a> */}
             
-        </div>
         <p>Copyright ©️ Inés Piazzalonga <br /> Proyecto final ReactJs</p>
+        </div>
+        <Link to='/login'>
+          <img src={login} alt="" />
+        </Link>
     </footer>
   )
 }

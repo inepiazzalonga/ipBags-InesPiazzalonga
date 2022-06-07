@@ -15,14 +15,12 @@ export const ItemDetailContainer = () => {
 
   useEffect(()=>{
     const db = getFirestore()
-    const dbQuery = doc(db, "productos", id)
+    const dbQuery = doc(db, "products", id)
     getDoc(dbQuery)
     .then(res => setProduct( {id : res.id, ...res.data() } ) )
     .catch((err)=> console.log(err))
     .finally(()=>setLoader(false))   
  }, [])
-
-
 
   return (
       <>

@@ -1,8 +1,3 @@
-// import { addDoc, collection, getFirestore } from "firebase/firestore"
-
-
-
-
 export const products =[
   {
     id: "1",
@@ -233,16 +228,8 @@ export const products =[
   }
 ]
 
-// function ProductsFB () {
-//   products.forEach((product)=>{
-//     const db = getFirestore()
-//     const queryCollectionPush = collection(db, "products")
-//     addDoc(queryCollectionPush, product)
-//     .then((res)=>console.log(res))
-//   })
-// }
 
-// ProductsFB()
+
 // export const getData = (id) => {
 //   return new Promise((resolve)=>{
 //       setTimeout(()=>{
