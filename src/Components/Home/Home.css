@@ -41,3 +41,21 @@
     transform: scale(1.03);
     transition-duration: 0.5s;
 }
+
+@media screen and (max-width:600px) {
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .modelHome{
+        width: 100%;
+        transform: rotateY(180deg);
+    }
+    
+    .goToShop{
+        width: 100%;
+      
+    }
+}

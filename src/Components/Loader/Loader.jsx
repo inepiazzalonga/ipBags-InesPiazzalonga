@@ -1,5 +1,6 @@
 import React from 'react'
 import loader from "../../assets/loader.gif"
+import "./loader.css"
 
 export const Loader = ({greeting}) => {
   return (

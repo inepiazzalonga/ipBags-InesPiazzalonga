@@ -40,12 +40,8 @@ header{
     text-decoration: none;
 }
 
-.verTodo{
-    text-transform: uppercase;
-    color: #8C9CA2;
-    text-decoration: none;
-}
 
-.verTodo:hover{
-    border-bottom: 1px #8C9CA2 solid;
+
+@media screen and (min-width:350px){
+    
 }

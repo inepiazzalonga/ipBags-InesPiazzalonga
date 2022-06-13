@@ -2,6 +2,7 @@ import ItemList from "../ItemList/ItemList"
 import { Loader } from '../Loader/Loader';
 import { useParams } from 'react-router-dom';
 import {getFirestore, collection, getDocs, where, query} from "firebase/firestore"
+import { Link } from "react-router-dom";
 import { Footer } from '../Footer/Footer';
 import React, { useEffect, useState } from 'react';
 import "./ItemListContainer.css"           
@@ -41,6 +42,9 @@ export default function ItemListContainer({greeting = "Shop"}) {
     return (
 
       <>
+         <Link to="/shop" className='link'>
+        <p className='verTodo'>Ver todo</p>
+        </Link>
         <h1 className="itemListContainer__title">{greeting}</h1>
         <div className="itemListContainer">
 

@@ -37,9 +37,7 @@ export const NavBAr = () => {
             </Link> : <CartWidget/>}
             
         </nav>
-        <Link to="/shop" className='link'>
-        <p className='verTodo'>Ver todo</p>
-        </Link>
+     
     </header>
   )
 }
